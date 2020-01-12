@@ -189,8 +189,6 @@ def home():
 <h3>Image Uploader</h3>
 <p>Upload an image for everyone to see. Valid images are pushed to everyone
 currently connected, and only the most recent %s images are saved.</p>
-<p>The complete source for this Flask web service can be found at:
-<a href="https://github.com/bboe/flask-image-uploader">https://github.com/bboe/flask-image-uploader</a></p>
 <p class="notice">Disclaimer: The author of this application accepts no responsibility for the
 images uploaded to this web service. To discourage the submission of obscene images, IP
 addresses with the last two octets hidden will be visibly associated with uploaded images.</p>
@@ -266,16 +264,6 @@ dynamically view new images.</noscript>
       e.target.value = '';
   });
   sse();
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-510348-17']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
 </script>
 """ % (MAX_IMAGES, '\n'.join(images))  # noqa
 
